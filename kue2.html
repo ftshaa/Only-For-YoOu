@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>₍^. .^₎Ⳋ</title>
+<link rel="stylesheet" href="style2.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #e0f7fa;
+    color: #222;
+    overflow: hidden; /* agar balon tidak membuat scroll */
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Kertas */
+  .paper {
+    display: inline-block;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 36px 48px;
+    box-shadow: 0 12px 30px rgba(20,30,50,0.18), 0 2px 8px rgba(20,30,50,0.06);
+    border: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+    z-index: 2; /* kertas selalu di atas balon */
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .paper-content { position: relative; z-index: 2; }
+
+  .paper-content h1 {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.5s;
+    font-family: monospace;
+  }
+
+  .paper-content p {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+  }
+
+  /* Animasi fadeIn */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Button Next */
+  #nextBtn {
+  display: block;
+  margin: 20px auto 0 auto; 
+  padding: 8px 16px;        
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #E03C3E;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 3s; /* muncul setelah teks */
+  transition: background-color 0.3s;
+  float: right;
+}
+
+  #nextBtn:hover {
+    background-color: #7D0708;
+  }
+
+  .fade-out {
+    animation: fadeOut 1s forwards;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to   { opacity: 0; transform: translateY(20px); }
+  }
+
+  /* Balon */
+  .balloon {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 60px;
+    background-color: #ff6b81;
+    border-radius: 50% 50% 50% 50%;
+    opacity: 0.8;
+    animation: floatUp linear infinite;
+  }
+
+  /* Variasi warna balon */
+  .balloon:nth-child(1) { background-color: #ff6b81; left: 10%; animation-duration: 8s; animation-delay: 0s; }
+  .balloon:nth-child(2) { background-color: #ffcd56; left: 25%; animation-duration: 10s; animation-delay: 2s; }
+  .balloon:nth-child(3) { background-color: #1dd1a1; left: 40%; animation-duration: 12s; animation-delay: 1s; }
+  .balloon:nth-child(4) { background-color: #54a0ff; left: 55%; animation-duration: 9s; animation-delay: 3s; }
+  .balloon:nth-child(5) { background-color: #f368e0; left: 70%; animation-duration: 11s; animation-delay: 0s; }
+  .balloon:nth-child(6) { background-color: #ff9f43; left: 85%; animation-duration: 10s; animation-delay: 2s; }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    50% { transform: translateY(-50vh) rotate(20deg); }
+    100% { transform: translateY(-110vh) rotate(-20deg); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Balon di belakang -->
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+
+<div class="page-wrapper">
+  <article class="paper">
+    <div class="paper-content">
+      <h1>hayyiiiee kakakaa</h1>
+      <p>
+        now's the date 31/10/2025 🗓🗓 which means this is the date u were born a few years ago  ૮ ⑅ ´ ˘ `  ა
+        && it means today is ur birthday 🎂🎂 - !i so, i just want to say " h🅰ppy birthDay to uu ". . 
+        sekarang KAKAA RESMI UNLOCK LVL 17 YEEAYY, BIKIN KTP NIEE YEE, kaka udh dewasa gais AHAHAHAHA.
+        semoga hari-hari kaka dipenuhi hal random & gokil yang bikin kaka lupa sama yang namanya sedih,
+        && semoga mood kakaa selalu full bar 📶✨ akuu udhh lamaa nunggu hari inii,
+        aku harap di tahun ini kaka bisa menggapai semua hal yang kakaa inginkan yaa 🫴🏻🫴🏻. . .
+        whOoshh..🕯️🕯️ setiap lilin yang padam, wish apapun yang kaka pikirin bakal langsung kebaca sama universe, kaya chat masuk 📩🔮🪄(real).
+        don't forget to always pray and try 🏃🏻‍♀🏃🏻‍♀ !  && after u get what u want, jangan lupa buat sllu bersyukur yaa 🫵🏻🫵🏻
+        be a better person than in previous years, okay? i'll continue to pray for good things for u here 💁🏻‍♀💁🏻‍♀
+      </p>
+      <p>
+        okeyy, gamaauu banyaak banyaak, cape nanti kaka baca nyaa 🫢🫢 segituu aja duluu yaa yangg aku sampaikan 💭💭
+        thanks f all and thanks for read this message rawr 🧟‍♀🧟‍♀ AHAHWUWHWJWHSN BIBAAYYY KAKAA
+      </p>
+      <!-- Button Next ditambahkan -->
+      <button id="nextBtn">Next →</button>
+    </div>
+  </article>
+</div>
+
+<script>
+const nextBtn = document.getElementById('nextBtn');
+const paper = document.querySelector('.paper');
+
+// Balon loop terus menerus
+const balloons = document.querySelectorAll('.balloon');
+balloons.forEach(balloon => {
+  balloon.addEventListener('animationend', () => {
+    balloon.style.animation = 'none'; // reset
+    balloon.offsetHeight; // trigger reflow
+    balloon.style.animation = ''; // restart
+  });
+});
+
+// Button klik -> fade out + pindah halaman
+nextBtn.addEventListener('click', () => {
+  paper.classList.add('fade-out');  // fade out kertas
+  nextBtn.classList.add('fade-out'); // fade out button
+  setTimeout(() => {
+    window.location.href = "kue3.html"; // ganti sesuai halaman tujuan
+  }, 1000);
+});
+</script>
+
+</body>
+</html>

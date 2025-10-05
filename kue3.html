@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>૮₍ ´• ˕ • ₎ა</title>
+<link rel="stylesheet" href="style3.css">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e0f7fa;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Kertas */
+  .paper {
+    position: absolute;
+    background: radial-gradient(#fdf1be 0%);
+    border-radius: 20% 20% 20% 20%; 
+    padding: 30px 40px;
+    font-size: 22px;
+    line-height: 1.6;
+    box-shadow: 0 0 15px 5px brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #7D0708;
+    font-weight: bold;
+    transform: scale(0) translateY(0);
+    opacity: 0;
+    z-index: 3;
+    animation: showPaper 0.8s ease forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes showPaper {
+    from {
+      transform: scale(0) translateY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1.15) translateY(-55px); /* naik ±1.5cm */
+      opacity: 1;
+    }
+  }
+
+  /* Tanda tanya berkedip */
+  .questions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .questions span {
+    position: absolute;
+    color: brown;
+    font-size: 14px !important;
+    animation: twinkle 1.5s infinite alternate ease-in-out;
+    opacity: 0;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0.2; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1.2); }
+  }
+</style>
+</head>
+<body>
+
+<!-- KERTAS SAJA -->
+<div class="paper">i have <br> something <br> for you.. <br> wait for <br> it okaayy !!</div>
+
+<!-- TANDA TANYA -->
+<div class="questions"></div>
+
+<script>
+  const questions = document.querySelector('.questions');
+
+  function createQuestions(count = 60) {
+    for (let i = 0; i < count; i++) {
+      const q = document.createElement('span');
+      q.textContent = '❓';
+      q.style.left = `${Math.random() * window.innerWidth}px`;
+      q.style.top = `${Math.random() * window.innerHeight}px`;
+      q.style.fontSize = `${Math.random() * 30 + 10}px`;
+      q.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      q.style.animationDelay = `${Math.random() * 3}s`;
+      questions.appendChild(q);
+    }
+  }
+
+  window.addEventListener('load', () => {
+    createQuestions(60);
+  });
+</script>
+
+</body>
+</html>
